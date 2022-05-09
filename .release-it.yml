@@ -1,12 +1,6 @@
-github:
-  release: true
 git:
   changelog: "git log --pretty=format:\"* %s (%h)\" ${from}...${to}"
   commitMessage: "Release ${version}"
-  tag: true
-  tagAnnotation: "Release ${version}"
-npm:
-  publish: true
 hooks:
   before:init:
     - "CI=true npm t --silent -- --watchAll=false --json --passWithNoTests"
