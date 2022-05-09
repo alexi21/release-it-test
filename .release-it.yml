@@ -1,5 +1,4 @@
 git:
-  changelog: "git log --pretty=format:\"* %s (%h)\" ${from}...${to}"
   commitMessage: "Release ${version}"
 npm:
   publish: false
